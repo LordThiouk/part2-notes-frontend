@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run Cypress Tests
-        run: npx cypress run      
+        run: npx cypress run --config-file /node_modules/.bin/cypress open
         env:
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in GitHub repo → Settings → Secrets → Actions
